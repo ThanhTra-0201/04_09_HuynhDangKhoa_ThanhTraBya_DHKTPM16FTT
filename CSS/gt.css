@@ -1,0 +1,255 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    letter-spacing: 4px;
+}
+
+body {
+    height: 100vh;
+    background: rgb(4, 4, 13);
+    display: block;
+}
+
+.card:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 5%;
+    height: 5%;
+    border-top: 5px solid #ff0000;
+    border-left: 5px solid #15ffeb;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+
+.card:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 5%;
+    height: 5%;
+    border-right: 5px solid #15ffeb;
+    border-bottom: 5px solid #ff0000;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.card:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+.card:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+.card {
+    width: 1000px;
+    height: 500px;
+    background: rgb(253, 253, 253);
+    margin: 0 auto;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.avatar {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    left: 50%;
+    transform: translate(-50%);
+    top: -120px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px aqua, 0px 0px 10px aqua, 0px 0px 20px aqua;
+
+}
+
+.avatar img {
+    max-width: 100%;
+}
+
+.info {
+    min-height: 200px;
+    margin-top: 200px;
+    padding-top: 200px;
+}
+
+.info .name {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ff0000;
+    font-size: 25px;
+}
+
+.info .dia_chi {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+
+.info .sdt {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.info .sdt span {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+
+.thanh_vien {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.thanh_vien button {
+    margin: -30px 5px;
+    width: 230px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: #000000;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.thanh_vien button:hover {
+    background: rgb(0, 159, 251);
+
+}
+
+.card2:before {
+    content: "";
+    position: absolute;
+    top: -5px;
+    left: -5px;
+    width: 5%;
+    height: 5%;
+    border-top: 5px solid #ff0000;
+    border-left: 5px solid #15ffeb;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+
+.card2:after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    right: -5px;
+    width: 5%;
+    height: 5%;
+    border-right: 5px solid #15ffeb;
+    border-bottom: 5px solid #ff0000;
+    transition: all 0.5s;
+    z-index: -1;
+}
+
+.card2:hover:before {
+    width: 100%;
+    height: 100%;
+}
+
+.card2:hover:after {
+    width: 100%;
+    height: 100%;
+}
+
+.card2 {
+    width: 1000px;
+    height: 500px;
+    background: rgb(253, 253, 253);
+    margin: 0 auto;
+    margin-bottom: 200px;
+    position: relative;
+}
+
+.avatar2 {
+    width: 300px;
+    height: 300px;
+    position: absolute;
+    border-radius: 50%;
+    border: 5px solid rgb(0, 0, 0);
+    left: 50%;
+    transform: translate(-50%);
+    top: -120px;
+    overflow: hidden;
+    box-shadow: 0px 0px 5px aqua, 0px 0px 10px aqua, 0px 0px 20px aqua;
+
+}
+
+.avatar2 img {
+    max-width: 100%;
+}
+
+.info2 {
+    min-height: 200px;
+    margin-top: 200px;
+    padding-top: 200px;
+}
+
+.info2 .name2 {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #ff0000;
+    font-size: 25px;
+}
+
+.info2 .dia_chi2 {
+    text-align: center;
+    margin-top: 10px;
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+
+.info2 .sdt2 {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.info2 .sdt2 span {
+    color: rgb(255, 0, 0);
+    font-size: 30px;
+}
+
+.thanh_vien2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.thanh_vien2 button {
+    margin: -30px 5px;
+    width: 230px;
+    height: 50px;
+    outline: none;
+    border: none;
+    background: #000000;
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.5s;
+}
+
+.thanh_vien2 button:hover {
+    background: rgb(0, 159, 251);
+
+}

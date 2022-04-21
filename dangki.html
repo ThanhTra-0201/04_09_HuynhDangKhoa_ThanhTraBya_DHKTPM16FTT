@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đăng kí</title>
+    <link rel="stylesheet" href="CSS/dang_ki.css" />
+    <script src="Lib/bootstrap.min.js"></script>
+    <script src="Lib/jquery-3.3.1.min.js"></script>
+    <script src="JS/kt_dang_ki.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <form action="">
+        <h1>Đăng Kí</h1>
+        <div class="f1">
+          <input type="text" placeholder="Họ và tên" id="ho_ten" />
+          <div>
+            <span id="tbho_ten" style="color: red">*</span>
+          </div>
+        </div>
+        <div class="f1">
+          <input type="text" placeholder="@user" id="uesr" />
+          <div>
+            <span id="tbuser" style="color: red">*</span>
+          </div>
+        </div>
+        <div class="f1">
+          <input type="password" name="" id="pass" placeholder="@password" />
+          <div>
+            <span id="tbpassword" style="color: red">*</span>
+          </div>
+        </div>
+        <div class="f1">
+          <input
+            type="password"
+            name=""
+            id="pass2"
+            placeholder="Nhập lại password"
+          />
+          <div>
+            <span id="tbpass2" style="color: red">*</span>
+          </div>
+        </div>
+        <div class="f1">
+          <input type="email" name="" id="email" placeholder="Email" />
+          <div>
+            <span id="tbemail" style="color: red">*</span>
+          </div>
+        </div>
+        <div class="gioi_tinh">
+          <input name="gender" type="radio" value="Nam" />Nam
+          <input name="gender" type="radio" value="Nữ" />Nữ
+          <input name="gender" type="radio" value="Khác" />Khác
+        </div>
+        <div class="f1">
+          <input type="text" name="" id="sdt" placeholder="Số điện thoại" />
+          <div>
+            <span id="tbsdt" style="color: red">*</span>
+          </div>
+        </div>
+        <input id="dangki" type="submit" value="Đăng kí" />
+      </form>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/produc.css" />
+    <link rel="stylesheet" href="Lib/bootstrap.min.css" />
+    <script src="Lib/jquery-3.3.1.min.js"></script>
+    <script src="Lib/bootstrap.min.js"></script>
+    <script src="JS/product.js"></script>
+    <script src="JS/search.js"></script>
+  </head>
+  <body>
+    <div class="col-sm-12">
+      <div class="top-header">
+        <div class="logo">
+          <a style="color: black" class="btn btn-block" href="index.html"
+            >ThietBiMang.com</a
+          >
+        </div>
+        <div id="main-menu">
+          <li class="item">
+            <a style="color: black" class="btn btn-block" href="index.html"
+              >Trang chủ</a
+            >
+          </li>
+          <div class="item">
+            <a style="color: black" class="btn btn-block" href="produc.html"
+              >Sản phẩm</a
+            >
+          </div>
+          <div class="item">
+            <a style="color: black" class="btn btn-block" href="gt.html"
+              >Liên hệ</a
+            >
+          </div>  
+          <div class="item">
+            <a style="color: black" class="btn btn-block" href="gt.html"
+              >Giới thiệu</a
+            >
+          </div>
+        </div>
+      </div>
+      <div class="product">
+        <div class="container"> 
+          <div class="sp">
+            <h3> Sản phẩm nổi bật</h3> 
+            <div class="seach">
+              <input type="text" id="search_input" placeholder="Nhập tên sản phẩm ...">
+              <button id="search_button" onclick="tim()">Search</button>
+            </div>
+          </div>
+          <div class="well well-sm text-right"> <strong>Chọn kiểu hiển thị</strong> 
+           <div class="btn-group"> 
+             <a id="list" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th-list"> </span>Dạng danh sách</a> 
+            <a id="grid" class="btn btn-default btn-sm"><span class="glyphicon glyphicon-th"></span>Dạng lưới</a> 
+           </div> 
+          </div> 
+
+          <div id="products" class="row list-group"> 
+           <div class="item  col-xs-3 col-lg-3"> 
+            <div class="thumbnail"> <img class="group list-group-image" src="photo/product_1.jpg" alt="Sản phẩm 1" width="150"> 
+             <div class="caption"> 
+              <h4 class="group inner list-group-item-heading">Router Wifi Mesh 3 Pack AC1300 TP-Link Deco M5</h4> 
+              <p class="group inner list-group-item-text"> Hỗ trợ chuẩn WiFi mới nhất 802.11AX (WiFi 6) và băng thông 80 MHz cho dung lượng tốt hơn</p> 
+              <div class="row"> 
+               <div class="col-xs-12 col-md-6"> 
+                <p class="lead"> 9.900.000đ</p> 
+               </div> 
+               <div class="col-xs-12 col-md-6"> <a class="btn btn-danger" href="chi_tiet_san_pham.html">Chi tiết</a> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+
+           <div class="item  col-xs-3 col-lg-3"> 
+            <div class="thumbnail"> <img class="group list-group-image" src="photo/product_2.jpg" alt="Sản phẩm 2" width="200"> 
+             <div class="caption"> 
+              <h4 class="group inner list-group-item-heading">Router Wifi Chuẩn Wifi 6 AX1500 TP-Link Archer AX10 Đen </h4> 
+              <p class="group inner list-group-item-text">Hỗ trợ chuẩn WiFi 6 với băng thông ấn tượng đến 1.5 Mbps chất lượng cao</p> 
+              <div class="row"> 
+               <div class="col-xs-12 col-md-6"> 
+                <p class="lead"> 10.000.000đ</p> 
+               </div> 
+               <div class="col-xs-12 col-md-6"> <a class="btn btn-danger" href="chi_tiet_2.html">Chi tiết</a> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+
+           <div class="item  col-xs-3 col-xs-3"> 
+            <div class="thumbnail"> <img class="group list-group-image" src="photo/product_3.jpg" alt="Sản phẩm 3" width="300"> 
+             <div class="caption"> 
+              <h4 class="group inner list-group-item-heading">Router Wifi Chuẩn N TP-Link TL-WR844N Trắng</h4> 
+              <p class="group inner list-group-item-text"> Router Wifi TP-Link TL-WR844N có tốc độ WiFi cao lên tới 300 Mbps</p> 
+              <div class="row"> 
+               <div class="col-xs-12 col-md-6"> 
+                <p class="lead"> 1.200.000đ</p> 
+               </div> 
+               <div class="col-xs-12 col-md-6"> <a class="btn btn-danger" href="chi_tiet_3.html">Chi tiết</a> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+
+           <div class="item  col-xs-3 col-lg-3"> 
+            <div class="thumbnail"> <img class="group list-group-image" src="photo/product_4.jfif" alt="Sản phẩm 4" width="300"> 
+             <div class="caption"> 
+              <h4 class="group inner list-group-item-heading">Router Wifi Mesh 3 Pack AC1200 Mercusys Halo S12 Trắng</h4> 
+              <p class="group inner list-group-item-text">Tốc độ 300 Mbps ở băng tần 2.4GHz và 867 Mbps ở băng tần 5GHz.</p> 
+              <div class="row"> 
+               <div class="col-xs-12 col-md-6"> 
+                <p class="lead"> 2.000.000đ</p> 
+               </div> 
+               <div class="col-xs-12 col-md-6"> <a class="btn btn-danger" href="chi_tiet_4.html">Chi tiết</a> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+
+           <div class="item  col-xs-3 col-lg-3"> 
+            <div class="thumbnail"> <img class="group list-group-image" src="photo/product_5.jpg" alt="Sản phẩm 5" width="300"> 
+             <div class="caption"> 
+              <h4 class="group inner list-group-item-heading">Router Wifi Chuẩn AC1200 TP-Link Archer C6 Gigabit Đen</h4> 
+              <p class="group inner list-group-item-text">Hỗ trợ chế độ Access Point, giúp bạn nhanh chóng tạo ra một điểm truy cập không dây.</p> 
+              <div class="row"> 
+               <div class="col-xs-12 col-md-6"> 
+                <p class="lead">5.200.000đ</p> 
+               </div> 
+               <div class="col-xs-12 col-md-6"> <a class="btn btn-danger" href="chi_tiet_5.html">Chi tiết</a> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+
+           <div class="item  col-xs-3 col-lg-3"> 
+            <div class="thumbnail"> <img class="group list-group-image" src="photo/product_6.jpg" alt="Sản phẩm 6" width="300"> 
+             <div class="caption"> 
+              <h4 class="group inner list-group-item-heading">Bộ Phát Sóng Wifi Router Chuẩn Wifi 6 AX3000 Asus TUF-AX3000 Gigabit Đen</h4> 
+              <p class="group inner list-group-item-text"> Băng tần 2.4 GHz cung cấp các kết nối đáng tin cậy để gửi email, duyệt web và các tác vụ đơn giản khác</p> 
+              <div class="row"> 
+               <div class="col-xs-12 col-md-6"> 
+                <p class="lead">2.500.000đ</p> 
+               </div> 
+               <div class="col-xs-12 col-md-6"> <a class="btn btn-danger" href="chi_tiet_6.html">Chi tiết</a> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+
+           <div class="item  col-xs-3 col-lg-3"> 
+            <div class="thumbnail"> <img class="group list-group-image" src="photo/product_7.jpg" alt="Sản phẩm 7" width="180"> 
+             <div class="caption"> 
+              <h4 class="group inner list-group-item-heading">Bộ Phát Sóng Wifi Router Chuẩn Wifi 6 AX1800 Totolink X5000R Gigabit Đen</h4> 
+              <p class="group inner list-group-item-text">Totolink X5000R tương thích chuẩn Wi-Fi 6 (IEEE 802.11ax</p> 
+              <div class="row"> 
+               <div class="col-xs-12 col-md-6"> 
+                <p class="lead">7.990.000đ</p> 
+               </div> 
+               <div class="col-xs-12 col-md-6"> <a class="btn btn-danger" href="chi_tiet_7.html">Chi tiết</a> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+
+           <div class="item  col-xs-3 col-lg-3"> 
+            <div class="thumbnail"> <img class="group list-group-image" src="photo/product_8.jpg" alt="Sản phẩm 8" width="140"> 
+             <div class="caption"> 
+              <h4 class="group inner list-group-item-heading">Router Wifi Chuẩn AC1200 TP-Link Archer C64 Gigabit Đen </h4> 
+              <p class="group inner list-group-item-text">Archer C64 cho phép bạn kết nối nhiều thiết bị hơn và truyền phát đồng thời với hai băng tần 2.4 GHz và 5 GHz.</p> 
+              <div class="row"> 
+               <div class="col-xs-12 col-md-6"> 
+                <p class="lead">8.900.000đ</p> 
+               </div> 
+               <div class="col-xs-12 col-md-6"> <a class="btn btn-danger" href="chi_tiet_8.html">Chi tiết</a> 
+               </div> 
+              </div> 
+             </div> 
+            </div> 
+           </div> 
+          </div>
+         </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

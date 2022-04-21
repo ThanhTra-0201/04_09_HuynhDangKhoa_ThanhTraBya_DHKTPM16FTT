@@ -1,0 +1,147 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+}
+
+.header {
+    width: 100%;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+
+}
+
+.product {
+    width: 1089px;
+    height: calc(100vh - 100px);
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+}
+
+.header .logo {
+    width: 200px;
+    height: 50px;
+    border: 2px solid rgb(0, 0, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 5px;
+}
+
+.header .logo a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.container .header .menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    list-style: none;
+}
+
+.container .header .menu ul a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+
+}
+
+.container .header .menu ul li.menu_item {
+    margin-left: 100px;
+    width: 100px;
+    height: 40px;
+    border: 2px solid black;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.seach {
+    display: block;
+}
+
+.seach input {
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-left: 5px;
+}
+
+.seach button {
+    height: 30px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid black;
+    margin-left: 10px;
+    background: white;
+}
+
+.row {
+    margin-top: 20px;
+}
+
+.row h1 {
+    display: block;
+    font-size: 2em;
+    margin-top: 0.67em;
+    margin-bottom: 0.67em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.row h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-top: 0.83em;
+    margin-bottom: 0.83em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.row h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    margin-left: 0;
+    margin-right: 0;
+    font-weight: bold;
+}
+
+.container p {
+    font-size: 14px;
+    line-height: 25px;
+}
+
+.col-sm-5 .thong_so_ky_thuat {
+    display: block;
+}
+
+.col-sm-5 .thong_so_ky_thuat ul li {
+    display: flex;
+    list-style-type: none;
+    list-style-position: outside;
+}
+
+.col-sm-5 .thong_so_ky_thuat ul .liright {
+    margin-top: 3px;
+    margin-left: 20px;
+}
